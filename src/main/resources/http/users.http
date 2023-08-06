@@ -1,0 +1,17 @@
+### Добавление первого пользователя
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "firstName": "Ivan",
+  "lastName": "Ivanov"
+}
+
+### Получение всех пользователей
+
+GET localhost:8080/users
+
+### Получение пользователя
+
+GET http://localhost:8080/users/2

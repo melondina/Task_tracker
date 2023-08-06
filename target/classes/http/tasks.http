@@ -1,0 +1,29 @@
+### Добавление одной задачи первому пользователю
+
+POST localhost:8080/tasks
+Content-Type: application/json
+
+{
+  "title" : "Task1",
+  "description" : "Tasks description1",
+  "startDate": "2022-01-01",
+  "finishDate" : "2022-01-01",
+  "userExecutorId" : 2
+}
+
+### Добавление второй задачи первому пользователю
+
+POST localhost:8080/tasks
+Content-Type: application/json
+
+{
+  "title" : "",
+  "description" : "",
+  "startDate": "2022-01-02",
+  "finishDate" : "2022-01-02",
+  "userExecutorId" : 2
+}
+
+### Получение всех задач первого пользователя
+
+GET localhost:8080/users/2/tasks
